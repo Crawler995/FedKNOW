@@ -134,7 +134,28 @@ FedKNOW is designed to achieve SOTA performance (accuracy, time, and communicati
 |&nbsp; &nbsp; &nbsp; &nbsp;&#9745;&nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;[ShuffleNetV2 (ECCV'2018)](https://arxiv.org/abs/1807.11164) &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;[MiniImageNet](https://image-net.org/download.php)  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;|&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;[Demo](models/shufflenetv2.py)&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;|
 |&nbsp; &nbsp; &nbsp; &nbsp;&#9745;&nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;[DenseNet](https://arxiv.org/pdf/1707.06990.pdf) &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;[MiniImageNet](https://image-net.org/download.php) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;|&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;[Demo](models/Densenet.py)&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|
 |&nbsp; &nbsp; &nbsp; &nbsp;&#9745;&nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;[SENet (CVPR'2018)](https://ieeexplore.ieee.org/document/341010) &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;[MiniImageNet](https://image-net.org/download.php) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;|&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;[Demo](models/SENet.py)&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|
+
+<table style="width: 100%;">
+    <thead>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+    </tbody>
+</table>
+
 ## 4 Experiemts
+
 ### 4.1 Under different workloads (model and dataset)
 
 1. **Run**
@@ -219,7 +240,7 @@ FedKNOW is designed to achieve SOTA performance (accuracy, time, and communicati
         done
         ```
     - 6-layer CNN on FC100
-        
+      
         ```shell
         for ((i=0;i<20;i++));
         do
@@ -250,11 +271,11 @@ FedKNOW is designed to achieve SOTA performance (accuracy, time, and communicati
 2. **Result**
 
     - **The communication time under different workloads and maximal network bandwidth 1MB/s** (X-axis represents the dataset and Y-axis represents the communication time)
-        
+      
         <img src="https://github.com/LINC-BIT/FedKNOW/blob/main/Experiment%20images/difctime.png" width="50%">
         
     - **The communication time under different network bandwidths** (X-axis represents the network bandwidth and Y-axis represents the communication time)
-        
+      
         <img src="https://github.com/LINC-BIT/FedKNOW/blob/main/Experiment%20images/difbandwidth.png" width="50%">
         
 ### 4.3 Large scale
@@ -273,7 +294,7 @@ FedKNOW is designed to achieve SOTA performance (accuracy, time, and communicati
         <img src="https://github.com/LINC-BIT/FedKNOW/blob/main/Experiment%20images/bigscale_acc.png" width="50%">
         
     - **The average forgetting rate under 50 clients and 100 clients** (X-axis represents the task and Y-axis represents the average forgetting rate)
-        
+      
         <img src="https://github.com/LINC-BIT/FedKNOW/blob/main/Experiment%20images/bigscale_fr.png" width="50%">
         
 ### 4.4 Long task sequence
@@ -286,7 +307,7 @@ FedKNOW is designed to achieve SOTA performance (accuracy, time, and communicati
 2. **Result**
 
     - **The average accuracy under 80 tasks** (X-axis represents the task and Y-axis represents the accuracy)
-        
+      
         <img src="https://github.com/LINC-BIT/FedKNOW/blob/main/Experiment%20images/moretask_acc.png" width="50%">
         
     - **The average forgetting rate under 80 tasks** (X-axis represents the task and Y-axis represents the average forgetting rate)
@@ -310,7 +331,7 @@ FedKNOW is designed to achieve SOTA performance (accuracy, time, and communicati
 2. **Result**
 
     - **The accuracy under different parameter storage ratios** (X-axis represents the task and Y-axis represents the accuracy)
-        
+      
         <img src="https://github.com/LINC-BIT/FedKNOW/blob/main/Experiment%20images/difporpotion_acc.png" width="50%">
         
     - **The time under different parameter storage ratios** (X-axis represents the task and Y-axis represents the time on current task)
