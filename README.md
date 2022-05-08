@@ -138,7 +138,7 @@ FedKNOW is designed to achieve SOTA performance (accuracy, time, and communicati
 <table style="width: 100%;">
     <thead>
         <tr>
-            <th>1</th>
+            <th><span style="padding: 0 23vw;">1</span></th>
             <th>2</th>
             <th>3</th>
             <th>4</th>
